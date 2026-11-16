@@ -1,0 +1,17 @@
+--- key establishment ---
+algorithm               public key(SPKI)  ciphertext
+RSA-3072 (OAEP)                      422         384
+X25519                                44          32
+ML-KEM-512                           822         768
+ML-KEM-768                          1206        1088
+ML-KEM-1024                         1590        1568
+--- signatures ---
+algorithm               public key(SPKI)   signature
+RSA-3072 (PKCS#1)                    422         384
+ECDSA P-256 (r||s)                    91          64
+Ed25519                               44          64
+ML-DSA-44                           1334        2420
+ML-DSA-65                           1974        3309
+ML-DSA-87                           2614        4627
+SLH-DSA-SHA2-128s                     50        7856
+SLH-DSA-SHA2-128f                     50       17088

@@ -1,0 +1,15 @@
+N = 16, answer = 11
+  k  amp[answer]  amp[other]  P(answer)
+  0  +0.250       +0.250      0.062
+  1  +0.688       +0.188      0.473
+  2  +0.953       +0.078      0.908
+  3  +0.980       -0.051      0.961
+  4  +0.763       -0.167      0.582
+  5  +0.354       -0.241      0.125
+  6  -0.143       -0.256      0.020
+iterations needed (classical search needs about N/2 tries on average)
+      N  best k  P(answer)   (pi/4)*sqrt(N)
+  2^4        3     0.9613       3.1
+  2^8       12     0.9999      12.6
+  2^12      50     0.9999      50.3
+  2^16     201     1.0000     201.1

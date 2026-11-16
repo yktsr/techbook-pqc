@@ -1,0 +1,17 @@
+N = 15
+  a=7: a^x mod 15 = 1 7 4 13 1 7 4 13 1 ... -> period r=4
+    factors: 15 = 3 x 5
+N = 21
+  a=4: a^x mod 21 = 1 4 16 1 4 16 1 ... -> period r=3
+    r が奇数なので失敗 (別の a でやり直す)
+  a=5: a^x mod 21 = 1 5 4 20 16 17 1 5 4 20 ... -> period r=6
+    a^(r/2) = -1 (mod 21) なので失敗 (別の a でやり直す)
+  a=2: a^x mod 21 = 1 2 4 8 16 11 1 2 4 8 ... -> period r=6
+    factors: 21 = 7 x 3
+N = 3233
+  a=3: a^x mod 3233 = 1 3 9 27 81 243 729 2187 95 285 ... -> period r=260
+    factors: 3233 = 61 x 53
+success rate over a coprime to N
+  N = 15: 6 / 7 = 86%
+  N = 21: 6 / 11 = 55%
+  N = 3233: 1950 / 3119 = 63%
